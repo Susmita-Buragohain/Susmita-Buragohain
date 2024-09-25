@@ -1,0 +1,15 @@
+/Write an appropriate function call//
+Date-25/9/2024
+#include<stdio.h>
+main()
+{
+float x,y;
+y=formula(x);
+}
+y=formula(×)
+{
+float y;
+y=3*x-1;
+printf("y=%d",y);
+return(y);
+}
