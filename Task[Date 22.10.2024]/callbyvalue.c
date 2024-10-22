@@ -3,7 +3,7 @@ Swap two numbers using call by value
 #include<stdio.h>
 main()
 {
-int x=4,y=7;
+int x=10,y=20;
 
 printf("Before swap: %d,%d\n",x,y);
 swap(x,y);
