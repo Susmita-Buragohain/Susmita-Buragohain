@@ -26,9 +26,7 @@ struct Library {
 
 
 void addBook(struct Library *library, const char *title, const char *author, int publicationYear) {
-
     if (library->bookCount < 100) {
-
         strcpy(library->books[library->bookCount].title, title);
         strcpy(library->books[library->bookCount].author, author);
         library->books[library->bookCount].publicationYear = publicationYear;
@@ -54,11 +52,33 @@ void displayBooks(const struct Library *library) {
 
 int main() {
     struct Library myLibrary = { .bookCount = 0 }; 
+    char title[100], author[100];
+    int publicationYear;
+    int numberOfBooks, i;
 
 
-    addBook(&myLibrary, "1984", "George Orwell", 1949);
-    addBook(&myLibrary, "To Kill a Mockingbird", "Harper Lee", 1960);
-    addBook(&myLibrary, "The Great Gatsby", "F. Scott Fitzgerald", 1925);
+    printf("How many books do you want to add? ");
+    scanf("%d", &numberOfBooks);
+    getchar(); 
+
+    for (i = 0; i < numberOfBooks; i++) {
+        printf("\nEntering details for book %d:\n", i + 1);
+        
+        printf("Enter book title: ");
+        fgets(title, sizeof(title), stdin);
+        title[strcspn(title, "\n")] = '\0';  
+
+        printf("Enter book author: ");
+        fgets(author, sizeof(author), stdin);
+        author[strcspn(author, "\n")] = '\0';  
+
+        printf("Enter publication year: ");
+        scanf("%d", &publicationYear);
+        getchar();  
+
+
+        addBook(&myLibrary, title, author, publicationYear);
+    }
 
 
     displayBooks(&myLibrary);
