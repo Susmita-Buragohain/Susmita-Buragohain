@@ -1,0 +1,168 @@
+\documentclass{beamer}
+\usepackage{tikz}
+\usepackage{color}
+\usepackage{amsmath}
+\usetheme{Boadilla}
+
+% Presentation Information
+\title{Variable Declaration in C Programming}
+\author{Susmita Buragohain}
+\institute{Roll No: 2, MCA 1st}
+\date{\today}
+
+% Custom colors and styles
+\definecolor{myblue}{RGB}{30, 60, 140}
+\definecolor{mygreen}{RGB}{60, 140, 60}
+\definecolor{myorange}{RGB}{200, 120, 40}
+
+\setbeamercolor{frametitle}{fg=myblue}
+\setbeamercolor{title}{fg=myorange}
+\setbeamercolor{author}{fg=mygreen}
+\setbeamerfont{frametitle}{size=\Large,series=\bfseries}
+
+\begin{document}
+
+% Title slide
+\begin{frame}
+    \titlepage
+\end{frame}
+
+% Table of Contents
+\begin{frame}{Contents}
+    \tableofcontents
+\end{frame}
+
+% Introduction to Variables
+\section{Introduction to Variables}
+\begin{frame}{What is a Variable?}
+    \begin{itemize}
+        \item A variable is a storage location in memory with a symbolic name (identifier).
+        \item Used to store data that can be changed during program execution.
+        \item Variables make it easier to reuse data and make programs flexible.
+    \end{itemize}
+    \vspace{0.5cm}
+    \textcolor{myblue}{\textbf{Example:}} In a program that calculates total cost, a variable could store the value of an item price.
+\end{frame}
+
+% Declaration Syntax
+\section{Declaration Syntax}
+\begin{frame}{Variable Declaration Syntax}
+    \begin{itemize}
+        \item In C, variables must be declared with a data type before use.
+        \item Syntax: 
+        \[
+        \texttt{datatype variable\_name;}
+        \]
+        \item Example:
+        \[
+        \texttt{int age;}
+        \]
+    \end{itemize}
+    \vspace{0.5cm}
+    \begin{block}{Common Data Types}
+        \begin{itemize}
+            \item \texttt{int} - for integers
+            \item \texttt{float} - for floating-point numbers
+            \item \texttt{char} - for characters
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+% Memory Representation Diagram
+% Memory Representation Diagram
+\section{Memory Representation}
+\begin{frame}{Memory Representation of Variables}
+    \begin{itemize}
+        \item Each variable is stored at a unique memory location.
+        \item Variables take up memory based on their data type size.
+    \end{itemize}
+    
+    \vspace{0.5cm} % Extra space before the diagram
+
+    \begin{center}
+    \begin{tikzpicture}
+        % Draw memory cells
+        \foreach \i in {0,1,2,3} {
+            \draw[thick, fill=blue!10] (0, -\i) rectangle (3, -\i-1);
+            \node at (1.5, -\i-0.5) {\texttt{int var\i}};
+        }
+        % Labels
+        \node at (-1.5, -0.5) {Address 1000};
+        \node at (-1.5, -1.5) {Address 1004};
+        \node at (-1.5, -2.5) {Address 1008};
+        \node at (-1.5, -3.5) {Address 1012};
+    \end{tikzpicture}
+    \end{center}
+    
+    \vspace{0.5cm} % Extra space after the diagram
+    
+    \textcolor{myblue}{\textbf{Explanation:}} Each variable takes up memory based on its data type. In this example, each integer takes 4 bytes.
+\end{frame}
+
+
+% Real-Life Example
+\section{Real-Life Example}
+\begin{frame}{Real-Life Example of Variables}
+    \begin{itemize}
+        \item Imagine a program that tracks the stock quantity of a store.
+        \item Each item can be stored as a variable with a unique name.
+    \end{itemize}
+    \begin{block}{C Code Example}
+        \texttt{int apples = 50;}\\
+        \texttt{float price = 1.25;}\\
+        \texttt{char grade = 'A';}
+    \end{block}
+    \vspace{0.5cm}
+    \textcolor{mygreen}{\textbf{Explanation:}} Variables store different types of information (integer for quantity, float for price, char for grade).
+\end{frame}
+
+% Initialization and Assignment
+\section{Initialization and Assignment}
+\begin{frame}{Variable Initialization and Assignment}
+    \begin{itemize}
+        \item Initialization is assigning an initial value when declaring the variable.
+        \item Syntax:
+        \[
+        \texttt{datatype variable\_name = value;}
+        \]
+        \item Example:
+        \[
+        \texttt{int age = 25;}
+        \]
+    \end{itemize}
+    \vspace{0.5cm}
+    \textcolor{myorange}{\textbf{Note:}} Variables can also be assigned values later in the code.
+\end{frame}
+
+% Scope of Variables
+\section{Scope of Variables}
+\begin{frame}{Scope of Variables}
+    \begin{itemize}
+        \item Variables have scope, which determines where they can be accessed.
+        \item \textbf{Local Variables:} Declared inside a function or block and accessible only within that scope.
+        \item \textbf{Global Variables:} Declared outside all functions and accessible throughout the program.
+    \end{itemize}
+    \vspace{0.5cm}
+    \begin{block}{Example}
+        \texttt{int globalVar = 5;} \textcolor{myblue}{// global variable}\\
+        \texttt{void func() \{ int localVar = 10; \}} \textcolor{myblue}{// local variable}
+    \end{block}
+\end{frame}
+
+% Conclusion
+\section{Conclusion}
+\begin{frame}{Conclusion}
+    \begin{itemize}
+        \item Variables are essential in C programming, serving as placeholders for data.
+        \item Proper declaration, initialization, and understanding of scope enhance code functionality.
+        \item Variables enable flexibility and reusability in programs.
+    \end{itemize}
+\end{frame}
+
+% Thank You Slide
+\begin{frame}
+    \centering
+    \huge\textcolor{mygreen}{Thank You!}
+\end{frame}
+
+\end{document}

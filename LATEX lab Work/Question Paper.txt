@@ -1,0 +1,97 @@
+\documentclass[12pt, a4paper]{article}
+
+
+\usepackage{amsmath}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{C Programming Examination}
+\fancyhead[R]{Semester I, MCA}
+\fancyfoot[C]{\thepage}
+
+
+\title{\textbf{C Programming Examination}}
+\author{MCA 1st Year \\ Dibrugarh University}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+
+\section*{Instructions}
+\begin{itemize}
+    \item The exam duration is 3 hours.
+    \item Attempt all questions.
+    \item Write your answers neatly and clearly.
+    \item Marks are indicated in brackets next to each question.
+\end{itemize}
+
+
+
+    
+\section*{Section A: Objective Type Questions (1 mark each)}
+Answer all questions. Each question carries 1 mark.
+
+\begin{enumerate}
+    \item Which of the following is a correct syntax for a for-loop in C?
+    \begin{enumerate}
+        \item \texttt{for(i=0; i<n; i++)}
+        \item \texttt{for i=0; i<n; i++}
+        \item \texttt{for(i=0: i<n: i+)}
+        \item \texttt{for i=0: i<n: i++}
+    \end{enumerate}
+
+    \item What is the output of the following code?
+    \begin{verbatim}
+        int x = 5;
+        printf("%d", x++);
+    \end{verbatim}
+    \begin{enumerate}
+        \item 4
+        \item 5
+        \item 6
+        \item Compiler Error
+    \end{enumerate}
+
+    \item Which of these is not a valid variable name in C?
+    \begin{enumerate}
+        \item \texttt{int\_number}
+        \item \texttt{\_int}
+        \item \texttt{2number}
+        \item \texttt{number2}
+    \end{enumerate}
+
+  
+\end{enumerate}
+
+
+\section*{Section B: Short Answer Questions (5 marks each)}
+Answer any four questions. Each question carries 5 marks.
+
+\begin{enumerate}
+    \item Explain the use of pointers in C programming. Give an example.
+    \item What is a structure in C? Write a code example to demonstrate defining and accessing a structure.
+    \item Describe the difference between \texttt{while} and \texttt{do-while} loops with an example.
+    \item Write a C program to find the largest element in an array of integers.
+    \item Explain the concept of recursion in C with an example.
+   
+\end{enumerate}
+
+
+\section*{Section C: Long Answer Questions (10 marks each)}
+Answer any two questions. Each question carries 10 marks.
+
+\begin{enumerate}
+    \item Write a C program that takes a number as input and checks if it is a prime number. Explain your code.
+    \item Discuss file handling in C programming. Write a program to read and write data to a file.
+    \item Explain dynamic memory allocation in C. Write a program that demonstrates the use of \texttt{malloc} and \texttt{free}.
+    \item Write a C program to perform matrix multiplication and explain the code.
+   
+\end{enumerate}
+
+\end{document}

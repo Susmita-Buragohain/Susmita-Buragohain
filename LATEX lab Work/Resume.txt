@@ -1,0 +1,61 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[a4paper,margin=0.75in]{geometry}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+\definecolor{headercolor}{RGB}{45, 62, 80}
+\definecolor{accentcolor}{RGB}{41, 128, 185}
+
+\title{\vspace{-3cm}}
+\date{}
+
+\begin{document}
+
+\begin{minipage}{0.7\textwidth}
+    \raggedright
+    \textbf{\LARGE Susmita Buragohain} \\
+    \vspace{0.2cm}
+    \textcolor{accentcolor}{\large MCA Student} \\
+    \vspace{0.2cm}
+    \small
+    Email: \href{mailto:susmitaburagohain@gmail.com}{susmitaburagohain@gmail.com} \\
+    Phone: +91 8471993511
+\end{minipage}
+\hspace{0.05\textwidth} 
+\begin{minipage}{0.2\textwidth}
+    \raggedleft
+    \includegraphics[width=3cm, angle=0]{lab work 12 november 2024/photo.jpg} 
+\end{minipage}
+
+\vspace{0.5cm}
+
+
+\section*{Education}
+\begin{tabular}{>{\bfseries}p{0.25\textwidth} p{0.7\textwidth}}
+2019 & BSc.(Physics Hons.), Sibsagar College, Joysagar, Sivasagar, Assam, India \\
+2016 & High School, Sivasagar Junior College, Sivasagar, Assam, India \\
+2014 & Schooling, Asian Public School, North Lakhimpur, Assam, India \\
+\end{tabular}
+
+\section*{Skills}
+\begin{itemize}
+    \item \textbf{Programming Languages}: Python, C, Java
+    \item \textbf{Tools:} Git, Microsoft Office, Photoshop, Coral Draw, Leap Office, Adobe Page Maker, LaTeX
+    \item \textbf{Typing}: English, Assamese
+\end{itemize}
+
+\section*{Other Qualification}
+\begin{itemize}
+    \item \textbf{Professional Diploma in Computer Application(PDCA), 2022}: IT and PC tools, DTP, Tally.
+\end{itemize}
+
+
+\section*{Additional Information}
+\begin{itemize}
+    \item \textbf{Languages:} English, Assamese, Hindi
+    \item \textbf{Interests}: Software Development, AI and Machine Learning, Web Development
+\end{itemize}
+
+\end{document}

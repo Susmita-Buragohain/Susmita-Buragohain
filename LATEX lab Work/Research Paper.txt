@@ -1,0 +1,82 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}      % Input encoding (UTF-8)
+\usepackage{amsmath}             % For advanced mathematical formatting
+\usepackage{graphicx}            % To include graphics and images
+\usepackage{hyperref}            % For hyperlinks in references and citations
+\usepackage{geometry}            % For page dimensions and margins
+\usepackage{lipsum}              % To generate filler text (optional)
+\usepackage{fancyhdr}            % For custom headers and footers
+\usepackage{longtable}           % For tables that span multiple pages
+
+% Define margins
+\geometry{top=1in, bottom=1in, left=1in, right=1in}
+
+% Title, author and date
+\title{The Impact of Technology on Modern Education: A Comprehensive Study}
+\author{Susmita Buragohain\\Center for Computer Science and Application, Dibrugarh University}
+\date{\today}
+
+% Custom header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Research Paper}
+\fancyhead[C]{The Impact of Technology on Modern Education}
+\fancyhead[R]{Susmita Buragohain}
+
+\begin{document}
+
+% Title and abstract
+\maketitle
+
+\begin{abstract}
+    This research paper examines the role of technology in modern education, analyzing both the positive and negative impacts. The study considers online learning platforms, digital classrooms, and educational tools, discussing how technology has changed traditional teaching methods. It also highlights challenges such as the digital divide and over-reliance on technology.
+\end{abstract}
+
+\section{Introduction}
+The integration of technology into education has transformed teaching and learning environments worldwide. With the advent of digital tools, students now have access to resources that were previously unimaginable. This research aims to explore how technology has influenced education, both in terms of its benefits and its drawbacks.
+
+\section{Literature Review}
+Previous studies have shown that technology plays a critical role in enhancing educational experiences. Smith, in 2020, found that digital learning platforms increased student engagement. However, Jone, in 2019, pointed out that unequal access to technology could widen educational disparities. This section reviews existing literature on the various aspects of educational technology.
+
+\section{Methodology}
+This study uses a mixed-methods approach, combining qualitative interviews with quantitative surveys. A total of 200 students from 10 universities participated in the survey, while in-depth interviews were conducted with 20 educators. The survey included questions on the use of online learning platforms, digital tools, and classroom experiences with technology.
+
+\subsection{Survey Design}
+The survey comprised 25 questions, with both multiple-choice and open-ended formats. Questions focused on students' experiences with online learning, their perception of technology's effectiveness in learning, and challenges they face in using digital tools.
+
+\subsection{Data Analysis}
+Data were analyzed using statistical software. Descriptive statistics were used to summarize the survey results, and qualitative responses were coded for recurring themes.
+
+\section{Results}
+The survey results indicate that a majority of students (75\%) use digital tools regularly, including educational apps and online lecture materials. However, 40\% of respondents reported difficulties in accessing quality internet or devices, particularly in rural areas.
+
+\subsection{Statistical Data}
+Table \ref{table:survey_data} shows the distribution of responses regarding students' satisfaction with technology.
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|}
+    \hline
+    \textbf{Response} & \textbf{Percentage (\%)} \\
+    \hline
+    Very Satisfied & 30 \\
+    Satisfied & 45 \\
+    Neutral & 15 \\
+    Dissatisfied & 5 \\
+    Very Dissatisfied & 5 \\
+    \hline
+    \end{tabular}
+    \caption{Student Satisfaction with Digital Tools in Education}
+    \label{table:survey_data}
+\end{table}
+
+\section{Discussion}
+The results reveal that while most students are satisfied with the use of technology in education, a significant number face challenges related to digital access. This highlights the ongoing issue of the digital divide, which can limit the effectiveness of technology in education for all students. 
+
+\subsection{Limitations}
+This study is limited by the sample size and the geographical location of the participants. Future research should consider a more diverse group of students from different regions.
+
+\section{Conclusion}
+In conclusion, technology has the potential to significantly enhance the educational experience, offering students access to a wealth of resources and interactive tools. However, challenges such as the digital divide and the risk of over-reliance on technology need to be addressed. Policymakers and educators must ensure that technology is used in ways that promote equity and enrich learning experiences.
+
+\end{document}
